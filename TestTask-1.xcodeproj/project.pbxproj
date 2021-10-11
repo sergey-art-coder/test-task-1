@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC3447952714F43700BC7269 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3447942714F43700BC7269 /* Session.swift */; };
 		EC6AE8652714EBEB005DA858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AE8642714EBEB005DA858 /* AppDelegate.swift */; };
 		EC6AE8672714EBEB005DA858 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AE8662714EBEB005DA858 /* SceneDelegate.swift */; };
 		EC6AE8692714EBEB005DA858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AE8682714EBEB005DA858 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC3447942714F43700BC7269 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		EC6AE8612714EBEB005DA858 /* TestTask-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestTask-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6AE8642714EBEB005DA858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC6AE8662714EBEB005DA858 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC3447902714F1F200BC7269 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC6AE86A2714EBEB005DA858 /* Main.storyboard */,
+				EC6AE86D2714EBED005DA858 /* Assets.xcassets */,
+				EC6AE86F2714EBED005DA858 /* LaunchScreen.storyboard */,
+				EC6AE8722714EBED005DA858 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC3447912714F26300BC7269 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EC6AE8642714EBEB005DA858 /* AppDelegate.swift */,
+				EC6AE8662714EBEB005DA858 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EC3447922714F39500BC7269 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EC6AE8682714EBEB005DA858 /* ViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EC3447932714F3C500BC7269 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EC3447942714F43700BC7269 /* Session.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		EC6AE8582714EBEB005DA858 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +94,10 @@
 		EC6AE8632714EBEB005DA858 /* TestTask-1 */ = {
 			isa = PBXGroup;
 			children = (
-				EC6AE8642714EBEB005DA858 /* AppDelegate.swift */,
-				EC6AE8662714EBEB005DA858 /* SceneDelegate.swift */,
-				EC6AE8682714EBEB005DA858 /* ViewController.swift */,
-				EC6AE86A2714EBEB005DA858 /* Main.storyboard */,
-				EC6AE86D2714EBED005DA858 /* Assets.xcassets */,
-				EC6AE86F2714EBED005DA858 /* LaunchScreen.storyboard */,
-				EC6AE8722714EBED005DA858 /* Info.plist */,
+				EC3447922714F39500BC7269 /* Modules */,
+				EC3447912714F26300BC7269 /* App */,
+				EC3447902714F1F200BC7269 /* Resources */,
+				EC3447932714F3C500BC7269 /* Services */,
 			);
 			path = "TestTask-1";
 			sourceTree = "<group>";
@@ -138,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3447952714F43700BC7269 /* Session.swift in Sources */,
 				EC6AE8692714EBEB005DA858 /* ViewController.swift in Sources */,
 				EC6AE8652714EBEB005DA858 /* AppDelegate.swift in Sources */,
 				EC6AE8672714EBEB005DA858 /* SceneDelegate.swift in Sources */,
@@ -290,7 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TestTask-1/Info.plist";
+				INFOPLIST_FILE = "TestTask-1/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TestTask-1/Info.plist";
+				INFOPLIST_FILE = "TestTask-1/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
